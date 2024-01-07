@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title> Shipment Management System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header text-center">
+                <h2> Shipment Management Using API</h2>
+            </div>
+            <form id="ship form" method="get">
+                <div class="form-group">
+                    <label>Shipment : </label>
+                    <input type="text" id="shipid" class="form-control" onchange="getEmp()">
+                </div>
+                <div class="form-group">
+                    <label>Description : </label>
+                    <input type="text" id="desc" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Source : </label>
+                    <input type="text" id="src" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Destination: </label>
+                    <input type="text" id="dest" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Shipping : </label>
+                    <input type="number" id="Shipda" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Delivery : </label>
+                    <input type="number" id="dil" class="form-control">
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-lg btn-primary" id="Save" onclick="saveData()" >save</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled >change</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetform()" disabled>Reset</button>                
+                </div>
+            </form>    
+        </div>
+
+        <script type="text/javascript" src="http://login2explore.com/jpdb//resource/js/0.0.3/jpdb-commons.js"></script>
+        <script type="text/javascript" src=js/js\index.js"></script>
+    </body>
+</html>
+
